@@ -1,0 +1,54 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+
+/* About 카드 */
+.about-card {
+  padding: 40px;
+  border-radius: 20px;
+  background: #fff;
+  border: 1px solid #eee;
+  text-align: center;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+}
+
+.about-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.about-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.about-card strong {
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card {
+    padding: 32px;
+  }
+}

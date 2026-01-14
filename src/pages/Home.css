@@ -1,0 +1,147 @@
+/* =========================
+   HERO
+========================= */
+.home {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.home-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.home-text {
+  max-width: 640px;
+}
+
+.home-eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: #888;
+  margin-bottom: 16px;
+}
+
+.home-title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 24px;
+}
+
+.home-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 32px;
+}
+
+.home-actions {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.btn-primary {
+  padding: 14px 28px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.home-stack {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.home-stack li {
+  padding: 6px 14px;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.home-image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+}
+
+/* =========================
+   FEATURED PROJECTS (FIXED)
+========================= */
+
+.home-projects {
+  padding: 120px 24px;
+}
+
+.home-projects-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+
+.home-project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.home-project-more {
+  margin-top: 32px;
+  text-align: left;
+}
+
+.home-project-more a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+}
+
+/* =========================
+   Mobile
+========================= */
+@media (max-width: 768px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-title {
+    font-size: 36px;
+  }
+
+  .home-project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   Scroll Anchor Fix
+========================= */
+section[id] {
+  scroll-margin-top: 96px;
+}

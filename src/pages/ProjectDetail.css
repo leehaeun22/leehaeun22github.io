@@ -1,0 +1,135 @@
+/* =========================
+   Project Detail Layout
+   ========================= */
+
+.project-detail {
+  padding: 120px 0;
+}
+
+.project-detail-container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* =========================
+   Header
+   ========================= */
+
+.project-detail-header {
+  margin-bottom: 64px;
+}
+
+.project-detail-header h1 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.project-detail-sub {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* =========================
+   Project Image
+   ========================= */
+
+.project-detail-image {
+  margin-bottom: 72px;
+}
+
+.project-detail-image img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   Sections
+   ========================= */
+
+.project-detail-section {
+  margin-bottom: 56px;
+
+  /* Scroll animation default */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.project-detail-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-detail-section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.project-detail-section p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* =========================
+   Tech Stack
+   ========================= */
+
+.project-detail-stack {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-detail-stack li {
+  padding: 6px 14px;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  font-size: 13px;
+  color: #333;
+  background: #fafafa;
+}
+
+/* =========================
+   Back Link
+   ========================= */
+
+.project-detail-back {
+  margin-top: 56px;
+}
+
+.project-detail-back a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 768px) {
+  .project-detail {
+    padding: 80px 0;
+  }
+
+  .project-detail-header h1 {
+    font-size: 34px;
+  }
+
+  .project-detail-sub {
+    font-size: 16px;
+  }
+
+  .project-detail-section h2 {
+    font-size: 20px;
+  }
+}

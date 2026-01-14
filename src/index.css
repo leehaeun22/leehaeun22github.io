@@ -1,0 +1,87 @@
+/* =========================
+   Reset
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   Design System
+========================= */
+:root {
+  /* spacing */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 32px;
+  --space-lg: 64px;
+
+  /* radius */
+  --radius-sm: 12px;
+  --radius-md: 20px;
+
+  /* colors */
+  --color-text: #111;
+  --color-sub: #555;
+  --color-border: #eee;
+
+  /* font */
+  --font-main: "Pretendard", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Apple SD Gothic Neo",
+    "Noto Sans KR", Arial, sans-serif;
+}
+
+/* =========================
+   Base
+========================= */
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: var(--font-main);   /* 🔥 Pretendard 적용 */
+  color: var(--color-text);
+  background: #fff;
+}
+
+/* form / button font normalize */
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+/* =========================
+   Layout
+========================= */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-sm);
+}
+
+/* =========================
+   Scroll Animation
+========================= */
+.scroll-section {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.scroll-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--space-sm);
+  }
+}

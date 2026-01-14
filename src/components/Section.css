@@ -1,0 +1,56 @@
+/* =========================
+   Section Layout (Big Picture Style)
+   ========================= */
+
+.section-animate {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 120px 64px;
+
+  opacity: 0;
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+/* 중앙 정렬 (style1) */
+.section-center {
+  justify-content: center;
+  text-align: center;
+  transform: translateY(40px);
+}
+
+/* 좌측 슬라이드 (style2 left) */
+.section-left {
+  justify-content: flex-start;
+  transform: translateX(-120px);
+}
+
+/* 우측 슬라이드 (style2 right) */
+.section-right {
+  justify-content: flex-end;
+  transform: translateX(120px);
+}
+
+/* 활성화 */
+.section-animate.show {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 768px) {
+  .section-animate {
+    padding: 80px 20px;
+  }
+
+  .section-left,
+  .section-right {
+    justify-content: center;
+    transform: translateY(40px);
+  }
+}
